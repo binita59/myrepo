@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="StringCountModelStoreContainer" CdmEntityContainer="StringCountEntities">
+    <EntitySetMapping Name="Tbl_StringData">
+      <EntityTypeMapping TypeName="StringCountModel.Tbl_StringData">
+        <MappingFragment StoreEntitySet="Tbl_StringData">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="LineContain" ColumnName="LineContain" />
+          <ScalarProperty Name="Words" ColumnName="Words" />
+          <ScalarProperty Name="Spaces" ColumnName="Spaces" />
+          <ScalarProperty Name="Charactors" ColumnName="Charactors" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

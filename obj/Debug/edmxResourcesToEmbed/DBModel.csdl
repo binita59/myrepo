@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="StringCountModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Tbl_StringData">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LineContain" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Words" Type="Int32" />
+    <Property Name="Spaces" Type="Int32" />
+    <Property Name="Charactors" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="StringCountEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Tbl_StringData" EntityType="Self.Tbl_StringData" />
+  </EntityContainer>
+</Schema>
